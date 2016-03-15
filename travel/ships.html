@@ -3,6 +3,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
 		<title>Cruise Vacation</title>
 		<link rel="stylesheet" href="css/style.css" type="text/css" />
 	</head>
@@ -30,6 +31,24 @@
 				</li>
 			</ul>
 		</div> 
+		<script src="http://skrish-wsm.internal.salesforce.com:57983/lightning/lightning.out.js"></script>
+			<div id="button_goes_here"/>
+				 <script>
+				    $Lightning.use("embeddedService:liveAgentSidebarApp", function() {
+				       $Lightning.createComponent("embeddedService:liveAgentSidebar", {
+				           deploymentId : '572xx0000000048',
+				           orgId : '00Dxx0000001gHk',
+				           buttonId : '573xx000000003j',
+				           endpointURL: 'http://skrish-wsm.internal.salesforce.com:8096/chat',
+				           chasitorContentServerEndpointURL : 'http://skrish-wsm.internal.salesforce.com:8095/content',
+				           chasitorSrcURL : ['http://skrish-wsm.internal.salesforce.com:57983/jslibrary/1446053165000/ui-sfdc-javascript/debug/SfdcCore.js', 'http://skrish-wsm.internal.salesforce.com:8095/content/g/js/37.0/chasitor.js'],
+				           prechatBackgroundImgURL : '',
+				           avatarImgURL : 'avatar.png',
+				           waitingStateBackgroundImgURL : 'waitingStateImage.png'
+				        }, "button_goes_here");
+				   },"http://fitbit-1475b6fa058-14df87572-15058749d26.localhost.force.com:57983/2001011");
+				   </script>
+			</div>
 		<div class="content">
 			<div id="ships-and-activities">
 				<h2>Ships &amp; Activities</h2>
